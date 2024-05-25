@@ -1,0 +1,283 @@
+.Confirm_Deposit {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  overflow-y: scroll;
+}
+
+.Confirm_DepositWrapper {
+  width: 92%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.Confirm_DepositHeader {
+  width: 100%;
+  height: 13vh;
+  display: flex;
+  background: fff;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.Confirm_DepositHeader span {
+  font-size: 22px;
+  letter-spacing: 1px;
+  /* color: rgb(42, 53, 71); */
+  color: white;
+}
+
+.Confirm_DepositBody {
+  margin-top: 2rem;
+  width: 100%;
+  /* height: 120vh; */
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background: #0d0b32;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.DepositConfirmation_Text {
+  font-size: 20px;
+}
+
+.Confirm_DepositBody p {
+  width: 70%;
+  font-size: 15px;
+  text-align: center;
+  /* font-weight: bold; */
+  /* color: rgb(42, 53, 71); */
+  color: white;
+}
+
+.Bitcoin_Payment {
+  padding: 0.5rem 0.5rem 7rem;
+  margin-top: 2rem;
+  width: 96%;
+  /* height: 80%; */
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: #090726;
+  align-items: center;
+  gap: 4rem;
+}
+
+.Clipboard_Notification {
+  width: 200px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  background: #000;
+  color: white;
+  font-size: 13px;
+  position: absolute;
+  right: 42%;
+}
+
+.Bitcoin_PaymentHeader {
+  width: 100%;
+  height: 12%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Bitcoin_PaymentHeader span {
+  font-size: 18px;
+  /* color: rgb(42, 53, 71); */
+  color: white;
+}
+
+.PaymentLine {
+  width: 90%;
+  height: 1px;
+  background: #0000002d;
+}
+
+.Bitcoin_PaymentParagraphs {
+  width: 90%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.Bitcoin_PaymentParagraphs p {
+  width: 100%;
+  font-size: 15px;
+  /* font-weight: bold; */
+  /* color: rgb(42, 53, 71); */
+  color: white;
+}
+
+.Copy_Btn {
+  width: 52px;
+  margin-right: 5px;
+  height: 35px;
+  border-radius: 5px;
+  background: gray;
+  color: white;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: monospace;
+  outline: none;
+  cursor: pointer;
+}
+
+.Copy_Btn:hover {
+  background: rgb(224, 0, 0);
+}
+
+.Payment_Wish {
+  width: 90%;
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.Payment_Wish span {
+  font-size: 16px;
+  /* font-weight: bold; */
+  /* color: rgb(42, 53, 71); */
+  color: white;
+}
+
+.Payment_Proof {
+  width: 90%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.Payment_Proof span {
+  font-size: 15px;
+  text-align: center;
+  /* font-weight: bold; */
+  /* color: rgb(42, 53, 71); */
+  color: white;
+}
+
+.Payment_Proof p {
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(250, 137, 107);
+}
+
+#File {
+  width: 100%;
+  /* height: 30%; */
+  display: flex;
+  background: white;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+  /* font-weight: bold; */
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: 1px solid rgb(232, 214, 214);
+  padding-left: 10px;
+  padding-top: 6px;
+}
+
+.Submit_Btn {
+  max-width: 30rem;
+  /* height: 10%; */
+  /* display: flex; */
+  /* align-items: flex-start; */
+}
+
+.Submit_Btn button {
+  /* width: 19%; */
+  /* height: 70%; */
+  cursor: pointer;
+  color: white;
+  outline: none;
+  background: rgb(226, 5, 5);
+  border: none;
+  font-size: 1rem;
+  /* font-weight: bold; */
+  border-radius: 5px;
+}
+
+.Submit_Btn button:hover {
+  background: grey;
+  transition: all 450ms;
+}
+
+.Image_Proof {
+  width: 90%;
+  height: 40%;
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: column;
+  gap: 29px;
+}
+
+.Image {
+  width: 45%;
+  height: 100%;
+}
+
+.Image img {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  border-radius: 5px;
+}
+
+.Proof_Buttons {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Proof_Buttons > label:first-child {
+  background: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Proof_Buttons > label:first-child:hover {
+  opacity: 0.6;
+}
+
+.Proof_Buttons label,
+.Proof_Buttons button {
+  width: 45%;
+  height: 20%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  /* font-weight: bold; */
+  background: purple;
+}
+
+.Proof_Buttons button:hover {
+  background: rgb(240, 27, 240);
+}

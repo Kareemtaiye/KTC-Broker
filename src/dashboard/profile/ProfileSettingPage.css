@@ -1,0 +1,125 @@
+.profile-section {
+  width: 100%;
+}
+.profile-headbar {
+  background: linear-gradient(to right, #ff0000, #0000ff);
+  display: flex;
+  padding: 1rem 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.profile-setting-detail {
+  font-size: 1.5rem;
+}
+
+.profile-main-info-container {
+  margin: 4rem 0 1rem;
+  padding: 0 3rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+  gap: 2rem;
+  background-color: rgba(47, 105, 253, 0.3);
+}
+
+.profile-main-content {
+  width: 97%;
+  padding: 1rem;
+  background-color: transparent;
+  background-color: rgb(14, 33, 80);
+  height: fit-content;
+}
+
+.profile-h5 {
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+
+.profile-main-content-container {
+  margin-top: 1rem;
+}
+
+.profile-submain-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  background-color: rgba(7, 15, 37, 0.623);
+  font-size: 0.8rem;
+}
+
+.profile-sub-detail {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-transform: capitalize;
+}
+
+.profile-form {
+  padding: 2rem;
+  width: 60%;
+}
+
+.profile-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 0.9rem;
+}
+
+.profile-form-label {
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+
+.profile-form-input {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: transparent;
+  border: 1px solid white;
+  color: #fff;
+}
+
+.profile-button-container {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.profile-button {
+  width: 100%;
+  padding: 1rem 3rem;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background-color: #cd9948;
+  color: #fff;
+  border-radius: 5px;
+  border-color: transparent;
+}
+
+@media screen and (max-width: 600px) {
+  .profile-main-info-container {
+    flex-direction: column;
+    padding: 1% 2%;
+  }
+
+  .profile-main-content {
+    width: 100%;
+  }
+
+  .profile-form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .profile-headbar {
+    padding: 1% 2%;
+  }
+}

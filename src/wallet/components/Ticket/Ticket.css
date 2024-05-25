@@ -1,0 +1,83 @@
+.Ticket-main-container{
+  background-color: #141443;
+  height: 80vh;
+  width: 75vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+}
+.Ticket-first-line{
+  width: 90%;
+  height: 15%;
+  /* background-color: bisque; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 7%;
+}
+.Ticket-first-line label{
+  width: 100%;
+  height: 30%;
+  font-size: 0.8rem;
+  color: white;
+
+}
+.Ticket-first-line input{
+  width: 100%;
+  height: 63%;
+  border-radius: 5px;
+  border: none;
+  background-color: #3A1D3F;
+  font-weight: 600;
+  padding-inline: 1.3rem;
+  color: white;
+  border: solid 0.5px rgba(242, 230, 230, 0.102);
+}
+.Ticket-first-line-style2{
+  width: 90%;
+  height: 15%;
+  /* background-color: bisque; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 7%;
+}
+.Ticket-first-line-style2 label{
+  width: 100%;
+  height: 30%;
+  font-size: 0.8rem;
+  color: white;
+
+}
+.Ticket-first-line-style2 input{
+  width: 100%;
+  height: 63%;
+  border-radius: 5px;
+  border: none;
+  background-color:transparent;
+  font-weight: 600;
+  padding-inline: 1.3rem;
+  /* color: white; */
+  border: solid 0.5px rgba(242, 230, 230, 0.102);
+}
+.Ticket-first-line-style2 select{
+  width: 100%;
+  height: 63%;
+  border-radius: 5px;
+  border: none;
+  background-color:transparent;
+  font-weight: 600;
+  padding-inline: 1.3rem;
+  color: white;
+  border: solid 0.5px rgba(242, 230, 230, 0.102);
+}
+.Ticket-first-line-style2 select option{
+  background-color: #141443;
+  font-size: 1rem;
+  gap: 1.2rem;
+}

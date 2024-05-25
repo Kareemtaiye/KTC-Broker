@@ -1,0 +1,325 @@
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+  .dashboard-content-body {
+    width: 100%;
+    /* background: cornflowerblue;  */
+    height: 100%;
+    padding: 0 3%;
+  }
+
+  .dashboard-coin-card-container {
+    height: 170vh;
+    width: 100%;
+    /* background: rgb(225, 225, 5); */
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .dashboard-coin-card-body {
+    width: 100%;
+    height: 70%;
+    /* background: green; */
+  }
+
+  .dashboard-coin-card-holder {
+    width: 100%;
+    height: 90%;
+    /* background: purple; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .dashboard-coin-card-holder-up,
+  .dashboard-coin-card-holder-down {
+    width: 100%;
+    height: 49.5%;
+    /* background: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .dashboard-coin-balance-h5 {
+    font-size: 24px;
+  }
+
+  .dashboard-coin-card-up-left,
+  .dashboard-coin-card-up-right,
+  .dashboard-coin-card-down-left,
+  .dashboard-coin-card-down-right {
+    width: 100%;
+    height: 49.5%;
+    border-radius: 6px;
+    /* background: indigo; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dashboard-coin-card-up-left .livecoinwatch-widget-1,
+  .dashboard-coin-card-up-right .livecoinwatch-widget-1,
+  .dashboard-coin-card-down-left .livecoinwatch-widget-1,
+  .dashboard-coin-card-down-right .livecoinwatch-widget-1 {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .dashboard-coin-balance-body {
+    width: 100%;
+    height: 100%;
+    /* background: blue; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dashboard-coin-balance-card-up,
+  .dashboard-coin-balance-card-down {
+    width: 90%;
+    /* height: 48%; */
+    display: block;
+    flex-direction: column;
+    gap: 15px;
+    padding: 5px;
+    /* background: yellow; */
+    border-radius: 6px;
+    box-shadow: rgba(145, 158, 171, 0.2) 0px 0px 2px 0px,
+      rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+  }
+
+  .profit-calculator-container {
+    width: 100%;
+    height: 100vh;
+    /* background: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .profit-calculator-container h2 {
+    font-size: 13px;
+    font-weight: 500;
+    width: 90%;
+  }
+
+  .profit-calculator-body {
+    width: 100%;
+    height: 85%;
+    /* background: black; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profit-calculator-left-card {
+    width: 100%;
+    height: 100%;
+    /* background: yellow; */
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    box-shadow: rgba(145, 158, 171, 0.2) 0px 0px 0px 0px,
+      rgba(145, 158, 171, 0.12) 0px 0px 0px 0px;
+    /* box-shadow: rgba(145, 158, 171, 0.2) 0px 0px 2px 0px,
+            rgba(145, 158, 171, 0.12) 0px 12px 24px -4px; */
+  }
+
+  .profit-calculator-select-container {
+    width: 90%;
+    height: 95%;
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .select-investment-label {
+    line-height: 30px;
+    font-weight: 600;
+    color: #2a3547;
+    font-size: 13px;
+    border-radius: 8px;
+  }
+
+  .select-wrapper {
+    width: 100%;
+    /* padding: 8px 38px 8px 16px; */
+    height: 50%;
+    /* overflow-y: scroll; */
+    /* background: green; */
+  }
+
+  .select-investment-plan-select {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding-left: 16px;
+    border: 1px solid #ebf1f6;
+    color: #5a6a85;
+    border-radius: 7px;
+  }
+
+  .select-investment-plan-select option {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+    font-size: 0.875rem;
+    color: #5a6a85;
+  }
+
+  .profit-calculator-btn {
+    width: 100%;
+    height: 15%;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    background: #2a3547;
+    color: #fff;
+  }
+
+  .profit-calculator-right-card {
+    width: 100%;
+    height: 100%;
+    /* background: pink; */
+    border-radius: 8px;
+    box-shadow: rgba(145, 158, 171, 0.2) 0px 0px 0px 0px,
+      rgba(145, 158, 171, 0.12) 0px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profit-calculator-right-body {
+    width: 90%;
+    height: 90%;
+    /* background: gray; */
+    box-shadow: rgba(145, 158, 171, 0.2) 0px 0px 2px 0px,
+      rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+  }
+
+  .profit-calculator-right-body-span {
+    color: #2a3547;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 12px;
+  }
+
+  .dashboard-recent-transaction-investment-container {
+    width: 100%;
+    height: 40vh;
+    /* background: rgb(28, 101, 133); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .dashboard-recent-transaction-card {
+    width: 100%;
+    height: 20%;
+    /* background: blue; */
+    border-radius: 9px;
+    box-shadow: rgba(145, 158, 171, 0.2) 0px 0px 0px 0px,
+      rgba(145, 158, 171, 0.12) 0px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dashboard-recent-transaction-body {
+    width: 90%;
+    height: 70%;
+    /* background: yellow; */
+  }
+
+  .dashboard-recent-transaction-card-title {
+    font-size: 14px;
+    color: #2a3547;
+    font-weight: 600;
+    font-family: sans-serif;
+    /* line-height: 10px; */
+    box-shadow: rgba(145, 158, 171, 0.2) 0px 0px 2px 0px,
+      rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+    padding-left: 20px;
+  }
+
+  .recent-transaction-ul-wrapper {
+    width: 100%;
+    height: 80%;
+    /* background: pink; */
+    display: flex;
+    align-items: center;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+  }
+
+  .recent-transaction-ul-span {
+    width: 100%;
+    font-size: 12px;
+    padding-left: 20px;
+    display: flex;
+  }
+
+  .dashboard-recent-investment {
+    width: 100%;
+    height: 80%;
+    /* background: blue; */
+    border-radius: 9px;
+    box-shadow: rgba(145, 158, 171, 0.2) 0px 0px 2px 0px,
+      rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dashboard-recent-investment-body {
+    width: 90%;
+    height: 80%;
+    /* background: red; */
+  }
+
+  .dashboard-recent-investment-card-title {
+    font-size: 14px;
+    color: #2a3547;
+    font-weight: 600;
+    font-family: sans-serif;
+    /* line-height: 10px; */
+    padding-left: 20px;
+  }
+
+  .investment-amount-gateway-status-profit-ul-wrapper {
+    width: 100%;
+    height: 80%;
+    /* background: pink; */
+    overflow-x: scroll;
+  }
+
+  .investment-amount-gateway-status-profit-ul-wrapper ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    font-weight: 100;
+    line-height: 50px;
+    font-size: 12px;
+    height: 45%;
+    gap: 70px;
+    padding-left: 20px;
+  }
+
+  .investment-amount-gateway-status-profit-span {
+    font-size: 12px;
+    padding-left: 20px;
+  }
+  .dashboard-balance-and-profit-holder h2 {
+    margin-top: 0.4rem;
+    font-size: 1rem;
+  }
+}

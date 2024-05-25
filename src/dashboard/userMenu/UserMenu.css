@@ -1,0 +1,392 @@
+.user-dashboard-body {
+  width: 100%;
+  height: 100vh;
+  background: #07122d;
+  display: flex;
+  /* flex-direction: column; */
+}
+
+.Menu {
+  display: none;
+}
+
+.user-dashboard-left-container {
+  width: 22%;
+  height: 100%;
+  /* background: rgb(255, 255, 255); */
+  display: flex;
+  justify-content: center;
+  border-right: 1px solid rgb(222, 219, 219);
+  overflow-y: scroll;
+}
+
+.user-dashboard-left-body {
+  width: 90%;
+  height: 100%;
+  /* background: cyan; */
+}
+
+.user-dashboard-left-body-logo {
+  /* width: 100%; */
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: cornflowerblue; */
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.user-dashboard-left-body-logo img {
+  /* width: 30%;
+  height: 80%; */
+  max-width: 15rem;
+}
+
+.user-dashboard-acct-balance-container {
+  width: 100%;
+  /* height: 50vh; */
+  /* background: blue; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+  gap: 10px;
+  box-shadow: rgba(207, 150, 69, 0.2) 0px 0px 2px 0px,
+    rgba(207, 150, 69 0.12) 0px 12px 24px -4px;
+  /* border: 0.5px solid #cd9948; */
+
+  margin-bottom: 2rem;
+}
+
+.user-dashboard-acct-balance-container h1 {
+  padding-left: 10px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.user-dashboard-deposit-wallet-container {
+  width: 100%;
+  /* height: 20%; */
+  background: #f0d9b36d;
+  display: flex;
+  align-items: center;
+  padding: .5rem;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.user-dashboard-deposit-wallet-wrapper {
+  width: 95%;
+  height: 80%;
+  /* background: cornflowerblue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: #fff;
+}
+
+.user-dashboard-deposit-wallet-wrapper p {
+  color: rgb(158, 158, 158);
+}
+
+.user-dashboard-deposit-withdraw-btn-wrapper {
+  width: 100%;
+  height: 20%;
+  /* background: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.user-dashboard-deposit-withdraw-btn-wrapper button {
+  width: 40%;
+  height: 65%;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.user-dashboard-left-body-menu {
+  width: 100%;
+  height: 67vh;
+  /* background: yellow; */
+  /* overflow: auto; */
+  overflow-y: scroll;
+}
+
+.user-dashboard-left-menu-title {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-dashboard-left-menu-titleP {
+  width: 90%;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.user-dashboard-left-menu-dashboard,
+.user-dashboard-left-menu-investment,
+.user-dashboard-left-menu-scheduleInvestment,
+.user-dashboard-left-menu-deposit,
+.user-dashboard-left-menu-withdraw,
+.user-dashboard-left-ion,
+.user-dashboard-left-menu-referral,
+.user-dashboard-left-menu-transaction,
+.user-dashboard-left-menu-supportTicket,
+.user-dashboard-left-menu-twoFA,
+.user-dashboard-left-menu-changePassword {
+  width: 100%;
+  height: 7vh;
+  /* background: rgb(255, 255, 255); */
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  gap: 10px;
+  color: rgb(158, 158, 158);
+  /* justify-content: center; */
+  /* border-radius: 10px; */
+  cursor: pointer;
+}
+
+.user-dashboard-left-menu-dashboard-active,
+.user-dashboard-left-menu-investment-active,
+.user-dashboard-left-menu-scheduleInvestment-active,
+.user-dashboard-left-menu-deposit-active,
+.user-dashboard-left-menu-withdraw-active,
+.user-dashboard-left-menu-transaction-active,
+.user-dashboard-left-menu-referral-active,
+.user-dashboard-left-menu-supportTicket-active,
+.user-dashboard-left-menu-twoFA-active,
+.user-dashboard-left-menu-changePassword-active {
+  width: 100%;
+  height: 7vh;
+  background: orangered;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 6px;
+}
+
+.user-dashboard-menu-dashboard-container {
+  align-items: center;
+}
+
+.user-dashboard-menu-dashboard-container,
+.user-dashboard-menu-investment-container,
+.user-dashboard-menu-scheduleInvestment-container,
+.user-dashboard-menu-deposit-container,
+.user-dashboard-menu-withdraw-container,
+.user-dashboard-menu-transaction-container,
+.user-dashboard-menu-referral-container,
+.user-dashboard-menu-supportTicket-container,
+.user-dashboard-menu-twoFA-container,
+.user-dashboard-menu-changePassword-container {
+  width: 90%;
+  /* height: 80%; */
+  /* background: rgb(117,16,246); */
+  display: flex;
+  align-items: center;
+  transition: 3s;
+}
+
+.user-dashboard-left-menu-dashboard:hover,
+.user-dashboard-left-menu-investment:hover,
+.user-dashboard-left-menu-scheduleInvestment:hover,
+.user-dashboard-left-menu-deposit:hover,
+.user-dashboard-left-menu-withdraw:hover,
+.user-dashboard-left-menu-transaction:hover,
+.user-dashboard-left-menu-referral:hover,
+.user-dashboard-left-menu-supportTicket:hover,
+.user-dashboard-left-menu-twoFA:hover,
+.user-dashboard-left-menu-changePassword:hover {
+  background: #cd9948;
+  color: white;
+  border-radius: 6px;
+}
+
+.user-dashboard-menu-dashboard-container-icon,
+.user-dashboard-menu-investment-container-icon,
+.user-dashboard-menu-scheduleInvestment-container-icon,
+.user-dashboard-menu-deposit-container-icon,
+.user-dashboard-menu-withdraw-container-icon,
+.user-dashboard-menu-transaction-container-icon,
+.user-dashboard-menu-referral-container-icon,
+.user-dashboard-menu-supportTicket-container-icon,
+.user-dashboard-menu-twoFA-container-icon,
+.user-dashboard-menu-changePassword-container-icon {
+  width: 16%;
+  height: 100%;
+  /* background: blue; */
+  display: flex;
+  align-items: center;
+}
+
+.user-dashboard-menu-icon,
+.user-dashboard-menu-investment-icon,
+.user-dashboard-menu-scheduleInvestment-icon,
+.user-dashboard-menu-deposit-icon,
+.user-dashboard-menu-withdraw-icon,
+.user-dashboard-menu-transaction-icon,
+.user-dashboard-menu-referral-icon,
+.user-dashboard-menu-supportTicket-icon,
+.user-dashboard-menu-twoFA-icon,
+.user-dashboard-menu-changePassword-icon {
+  font-size: 22px;
+  /* fill: rgb(42,53,71); */
+}
+
+.user-dashboard-left-menu-dashboard:hover .user-dashboard-menu-icon,
+.user-dashboard-left-menu-dashboard:hover
+  .user-dashboard-menu-dashboard-container-titleP,
+.user-dashboard-left-menu-investment:hover .user-dashboard-menu-investment-icon,
+.user-dashboard-left-menu-investment:hover
+  .user-dashboard-menu-investment-container-titleP,
+.user-dashboard-left-menu-scheduleInvestment:hover
+  .user-dashboard-menu-scheduleInvestment-icon,
+.user-dashboard-left-menu-scheduleInvestment:hover
+  .user-dashboard-menu-scheduleInvestment-container-titleP,
+.user-dashboard-left-menu-deposit:hover .user-dashboard-menu-deposit-icon,
+.user-dashboard-left-menu-deposit:hover
+  .user-dashboard-menu-deposit-container-titleP,
+.user-dashboard-left-menu-withdraw:hover .user-dashboard-menu-withdraw-icon,
+.user-dashboard-left-menu-withdraw:hover
+  .user-dashboard-menu-withdraw-container-titleP,
+.user-dashboard-left-menu-transaction:hover
+  .user-dashboard-menu-transaction-icon,
+.user-dashboard-left-menu-transaction:hover
+  .user-dashboard-menu-transaction-container-titleP,
+.user-dashboard-left-menu-referral:hover .user-dashboard-menu-referral-icon,
+.user-dashboard-left-menu-referral:hover
+  .user-dashboard-menu-referral-container-titleP,
+.user-dashboard-left-menu-supportTicket:hover
+  .user-dashboard-menu-supportTicket-icon,
+.user-dashboard-left-menu-supportTicket:hover
+  .user-dashboard-menu-supportTicket-container-titleP,
+.user-dashboard-left-menu-twoFA:hover .user-dashboard-menu-twoFA-icon,
+.user-dashboard-left-menu-twoFA:hover
+  .user-dashboard-menu-twoFA-container-titleP,
+.user-dashboard-left-menu-changePassword:hover
+  .user-dashboard-menu-changePassword-icon,
+.user-dashboard-left-menu-changePassword:hover
+  .user-dashboard-menu-changePassword-container-titleP {
+  color: white;
+}
+
+.user-dashboard-menu-icon-active,
+.user-dashboard-menu-investment-icon-active,
+.user-dashboard-menu-scheduleInvestment-icon-active,
+.user-dashboard-menu-deposit-icon-active,
+.user-dashboard-menu-withdraw-icon-active,
+.user-dashboard-menu-transaction-icon-active,
+.user-dashboard-menu-referral-icon-active,
+.user-dashboard-menu-supportTicket-icon-active,
+.user-dashboard-menu-twoFA-icon-active,
+.user-dashboard-menu-changePassword-icon-active {
+  font-size: 22px;
+  /* fill: rgb(255, 255, 255); */
+  color: orangered;
+}
+
+.user-dashboard-menu-dashboard-container-title,
+.user-dashboard-menu-investment-container-title,
+.user-dashboard-menu-scheduleInvestment-container-title,
+.user-dashboard-menu-deposit-container-title,
+.user-dashboard-menu-withdraw-container-title,
+.user-dashboard-menu-transaction-container-title,
+.user-dashboard-menu-referral-container-title,
+.user-dashboard-menu-supportTicket-container-title,
+.user-dashboard-menu-twoFA-container-title,
+.user-dashboard-menu-changePassword-container-title {
+  display: flex;
+  align-items: center;
+}
+
+
+.user-dashboard-menu-dashboard-container-titleP-active,
+.user-dashboard-menu-investment-container-titleP-active,
+.user-dashboard-menu-scheduleInvestment-container-titleP-active,
+.user-dashboard-menu-deposit-container-titleP-active,
+.user-dashboard-menu-withdraw-container-titleP-active,
+.user-dashboard-menu-transaction-container-titleP-active,
+.user-dashboard-menu-referral-container-titleP-active,
+.user-dashboard-menu-supportTicket-container-titleP-active,
+.user-dashboard-menu-twoFA-container-titleP-active,
+.user-dashboard-menu-changePassword-container-titleP-active {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+}
+
+.user-dashboard-menu-transaction-container-titleP-active:active {
+  color: wheat;
+  background-color: orangered;
+}
+
+.user-dashboard-left-menu-logout {
+  width: 100%;
+  height: 25%;
+  /* background: fuchsia; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-dashboard-logout-btn {
+  width: 88%;
+  /* height: 42%; */
+  padding: 0.4rem 0.8rem;
+  border: 1px solid rgb(250, 137, 107);
+  border-radius: 8px;
+  background: none;
+  color: rgb(250, 137, 107);
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.5s;
+}
+
+.user-dashboard-logout-btn:hover {
+  background: rgb(250, 137, 107);
+  color: white;
+}
+
+.user-dashboard-right-container {
+  width: 78%;
+  height: 100vh;
+  /* background: cyan; */
+  display: flex;
+  flex-direction: column;
+}
+
+.user-dashboard-profile-container {
+  width: 100%;
+  height: 10%;
+  /* border-bottom: 1px solid gray; */
+  overflow: hidden;
+}
+
+.user-dashboard-profile-wrapper {
+  width: 100%;
+  height: 10%;
+  /* background-color: purple; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-dashboard-menu-content-container {
+  width: 100%;
+  height: 80%;
+  overflow: auto;
+  /* background: red; */
+}
+
+.user-left-container-media {
+  display: none;
+}

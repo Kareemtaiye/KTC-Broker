@@ -1,0 +1,488 @@
+.withdrawal_Page {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  border-radius: 3px;
+  background-image: linear-gradient(to bottom right, #403f44, #1e1b32);
+}
+
+.withdrawal_History {
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  padding-left: 5%;
+  display: flex;
+  align-items: center;
+  top: 5%;
+}
+
+.withdrawal_History span {
+  padding-block: 20px;
+  padding-inline: 20px;
+  background: grey;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 15px;
+  color: white;
+}
+
+.withdrawal_History span:hover {
+  transition: all 750ms;
+  border: 1px solid white;
+}
+
+.withdrawal_Card {
+  width: 60%;
+  height: 60%;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.183);
+  background-color: #0d0b32;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.top_DepCard {
+  width: 90%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  font-size: 17px;
+  color: white;
+}
+
+.top_DepCard select {
+  width: 100%;
+  height: 50%;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 18px;
+  padding-left: 10px;
+  outline: none;
+}
+
+.top_DepCard select:focus {
+  border: 1px solid red;
+}
+
+.mid_DepCard {
+  width: 90%;
+  /* height: 30%; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  font-size: 17px;
+}
+
+.mid_DepCard div {
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+
+.mid_DepCard div > input {
+  width: 90%;
+  height: 100%;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 5px 0px 0px 5px;
+  padding-left: 10px;
+}
+.mid_DepCard div > span {
+  width: 10%;
+  height: 100%;
+  background: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.bot_DepCard {
+  width: 90%;
+  height: 30%;
+}
+
+.bot_DepCard button {
+  width: 100%;
+  height: 50%;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  background: purple;
+}
+.mid_DepCard div > input:focus {
+  border: 1px solid red;
+}
+
+.deposit_history {
+  /* width: 100%;
+  height: 100%; */
+  /* display: flex; */
+  /* flex-direction: column;
+  align-items: center; */
+}
+
+.deposit_HistoryHeader {
+  /* background: #000; */
+
+  align-self: flex-end;
+  padding: 1rem;
+}
+
+.search_HistoryDiv {
+  /* align-items: center; */
+}
+
+.search_HistoryDiv input {
+  padding: 0.2rem 0.4rem;
+  border: 1px solid rgba(255, 255, 255, 0.174);
+  padding-left: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  outline: none;
+  /* border-radius: 5px 0px 0px 5px; */
+  color: grey;
+  background: transparent;
+}
+
+.search_HistoryDiv input::placeholder {
+  color: gray;
+}
+
+.search_HistoryDiv span {
+  width: 15%;
+  height: 60%;
+  border-radius: 0px 5px 5px 0px;
+  display: flex;
+  font-size: 20px;
+  cursor: pointer;
+  background: #0d0b32;
+  font-weight: bold;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.deposit_HistoryBody {
+  width: 94%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.top_HistoryBodyS {
+  width: 100%;
+  /* height: 18%; */
+  padding: 1rem;
+  /* justify-content: space-evenly; */
+  justify-content: center;
+  display: flex;
+  /* padding-inline: 65px; */
+  align-items: center;
+  font-size: 0.7rem;
+  color: white;
+  font-weight: bold;
+  background: grey;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.bot_HistoryBody {
+  width: 100%;
+  height: 82%;
+  background: #0d0b32;
+  overflow-y: scroll;
+}
+
+.history_Data {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: bold;
+  align-items: center;
+  margin-top: 10px;
+  padding-inline: 65px;
+  cursor: pointer;
+  font-size: 15px;
+  color: grey;
+}
+
+.history_Data:hover {
+  background: #6d6c6c;
+  color: white;
+}
+
+.withdraw_page {
+  width: 100%;
+  /* height: 100%; */
+  background: grey;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.withdraw_page_form {
+  width: 95%;
+  height: auto;
+  padding-block: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: rgba(145, 158, 171, 0.2) 0px 0px 2px 0px,
+    rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+  box-sizing: border-box;
+}
+
+.withdraw_page_title_P {
+  /* width: 95%; */
+  height: 10vh;
+  display: flex;
+  font-weight: bold;
+  color: #0d0b32;
+  font-size: 20px;
+  align-items: center;
+}
+
+.withdraw_wrapper {
+  width: 95%;
+  height: 12vh;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.withdraw_gateway_text {
+  height: 27%;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.withdraw_gateway_select {
+  width: 50%;
+  height: 50px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgb(221, 215, 215);
+  padding-left: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+}
+/* 
+.withdraw_gateway_select option {
+  font-size: 16px;
+  font-weight: bold;
+} */
+
+.btc_div {
+  width: 95%;
+  height: 45vh;
+  /* background: yellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.btc_address_div {
+  width: 50%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.btc_address_div p {
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+}
+
+.btc_address_input {
+  width: 100%;
+  height: 55%;
+  border: 1px solid rgb(221, 215, 215);
+  outline: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.btc_proceed_to_withdraw_btn {
+  padding: 0.8rem 1rem;
+  width: 50%;
+  /* border: 1px solid rgb(250, 137, 107); */
+  border: none;
+  background: #0d0b32;
+  color: white;
+  font-weight: bold;
+  border-radius: 15px;
+  outline: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btc_proceed_to_withdraw_btn:hover {
+  background: rgb(226, 5, 5);
+  transition: all 350ms;
+  color: white;
+}
+
+.btc_amount_wrapper {
+  width: 100%;
+  height: 55%;
+  /* background: green; */
+  display: flex;
+  align-items: center;
+}
+
+.btc_amount_wrapper div {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid rgb(221, 215, 215);
+  border-top: 1px solid rgb(221, 215, 215);
+  border-bottom: 1px solid rgb(221, 215, 215);
+  border-radius: 5px 0px 0px 5px;
+}
+
+.btc_amt_input {
+  width: 90%;
+  height: 100%;
+  padding-left: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  outline: none;
+  border-top: 1px solid rgb(221, 215, 215);
+  border-right: 1px solid rgb(221, 215, 215);
+  border-bottom: 1px solid rgb(221, 215, 215);
+  border-left: 0px solid rgb(221, 215, 215);
+  border-radius: 0px 5px 5px 0px;
+}
+
+.bank_transfer_div {
+  width: 95%;
+  height: 75vh;
+  /* background: red; */
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.bank_name_div {
+  width: 50%;
+  height: 15%;
+  /* background: green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.bank_name_div p {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+.bank_name_input {
+  width: 100%;
+  height: 55%;
+  border: 1px solid rgb(221, 215, 215);
+  outline: none;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.bank_amt_div {
+  width: 50%;
+  height: 15%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.bank_amt_div p {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+.bank_amt_wrapper {
+  display: flex;
+  width: 100%;
+  height: 55%;
+}
+
+.bank_amt_wrapper div {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid rgb(221, 215, 215);
+  border-top: 1px solid rgb(221, 215, 215);
+  border-bottom: 1px solid rgb(221, 215, 215);
+  border-radius: 5px 0px 0px 5px;
+}
+
+.bank_amt_input {
+  width: 90%;
+  height: 100%;
+  outline: none;
+  padding-left: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  border-top: 1px solid rgb(221, 215, 215);
+  border-right: 1px solid rgb(221, 215, 215);
+  border-bottom: 1px solid rgb(221, 215, 215);
+  border-left: 0px solid rgb(221, 215, 215);
+  border-radius: 0px 5px 5px 0px;
+}
+
+.bank_proceed_to_withdraw_btn {
+  width: 20%;
+  height: 9%;
+  border: 1px solid rgb(250, 137, 107);
+  background: none;
+  color: #2a3547;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.bank_proceed_to_withdraw_btn:hover {
+  background: rgb(226, 5, 5);
+  color: white;
+}
+@media screen and (max-width: 600px) {
+  .btc_address_div {
+    width: 96%;
+  }
+  .withdraw_gateway_select {
+    width: 96%;
+  }
+  .btc_amount_wrapper div {
+    width: 13%;
+  }
+}

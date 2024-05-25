@@ -1,0 +1,108 @@
+.change-password-container {
+  width: 100%;
+  height: 100%;
+  /* background: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.change-password-body {
+  width: 80%;
+  height: 60%;
+  /* background: red; */
+}
+
+.change-password-title {
+  font-size: 19px;
+  font-weight: 100;
+  line-height: 40px;
+}
+
+.change-password-card {
+  width: 100%;
+  height: 80%;
+  /* background: yellow; */
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(145, 158, 171, 0.2) 0px 0px 2px 0px,
+    rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+}
+
+.change-password-card-body {
+  width: 95%;
+  height: 90%;
+  /* background: cornflowerblue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.current-password-container,
+/* .new-confirm-password-container, */
+.change-password-btn-container {
+  width: 100%;
+  height: 30%;
+  /* background: green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.dashboard-current-password-input {
+  width: 50%;
+  height: 50%;
+  padding: 10px;
+  color: white;
+  font-size: 16px;
+  background: transparent;
+  outline: none;
+  border-radius: 6px;
+  border: 1px solid #dfe5ef;
+}
+
+.new-confirm-password-container {
+  width: 100%;
+  height: 30%;
+  /* background: green; */
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+}
+
+.new-password-container,
+.confirm-password-container {
+  width: 49%;
+  height: 100%;
+  /* background: gray; */
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: space-around;
+}
+
+.dashboard-new-password-input,
+.dashboard-confirm-password-input {
+  width: 100%;
+  height: 50%;
+  padding: 10px;
+  outline: none;
+  background: transparent;
+  color: white;
+  border-radius: 6px;
+  font-size: 16px;
+  border: 1px solid #dfe5ef;
+}
+
+.change-password-submit-btn {
+  width: 30%;
+  cursor: pointer;
+  height: 50%;
+  background: rgb(226, 5, 5);
+  color: #fff;
+  border-radius: 7px;
+  border: none;
+  font-size: 14px;
+}

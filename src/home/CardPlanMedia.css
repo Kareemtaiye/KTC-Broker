@@ -1,0 +1,28 @@
+@media only screen and (min-width: 320px) and (max-width: 580px) {
+  .CardPlan-Container {
+    width: 100%;
+    height: 50vh;
+    background-color: grey;
+  }
+
+  .CardPlan-Container-Main {
+    justify-content: space-evenly;
+  }
+
+  .CardPlan-title img {
+    /* width: 40%; */
+    height: 70%;
+  }
+
+  .CardPlan-title h4 {
+    font-size: 14px;
+  }
+
+  .CardPlan-Details h5 {
+    font-size: 12px;
+  }
+
+  .CardPlan-CTA button {
+    height: 100%;
+  }
+}

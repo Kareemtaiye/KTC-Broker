@@ -1,0 +1,364 @@
+.Investment_Page {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* background-image: linear-gradient(to bottom right, #403f44, #1e1b32); */
+  /* position: relative; */
+}
+
+/* .Header_Tab {
+  width: 100%;
+  height: 13vh;
+  display: flex;
+  background: white;
+} */
+
+.Investment_Stats {
+  width: 95%;
+  display: flex;
+  justify-content: flex-end;
+  /* padding-right: 3%; */
+  align-items: center;
+  height: 10vh;
+}
+
+.Investment_Stats span {
+  cursor: pointer;
+  /* width: 15%;
+  height: 80%; */
+  padding: 0.5rem 1rem;
+  background: purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.InvestmentsCard_Wrapper {
+  margin-top: 2rem;
+  width: 95%;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  /* overflow-y: auto; */
+  margin-bottom: 6rem;
+}
+
+.Investment_Card {
+  /* width: 13rem;
+  height: 80%; */
+  /* padding: 2rem; */
+  max-width: 15rem;
+  border-radius: 10px;
+  background-color: grey;
+  transition: transform 0.3s ease-in-out;
+}
+
+.Investment_Card:hover {
+  transform: scale(1.05);
+}
+
+.TopInvestment_Card {
+  /* width: 100%;
+  height: 40%; */
+  padding: 2rem;
+  background-image: linear-gradient(to bottom right, goldenrod, purple);
+  color: white;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+  gap: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.TopInvestment_Card h1 {
+  font-size: 1.5rem;
+}
+
+.TopInvestment_Card span {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.investment-card-wrapper-details {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.BotInvestment_Card {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-bottom: 2px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.BotInvestment_Card div {
+  width: 100%;
+  /* height: 18%; */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.445);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.BotInvestment_Card article {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 28%; */
+}
+
+.BotInvestment_Card article button {
+  border: none;
+  /* margin-top: 1rem; */
+  padding: 1rem 2rem;
+  outline: none;
+  cursor: pointer;
+  background: white;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.BotInvestment_Card article button:hover {
+  background: purple;
+  color: white;
+  transition: all 350ms;
+}
+
+.ConfirmInvestment_CardBody {
+  width: 100%;
+  height: 90vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #00000088;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ConfirmInvestment_Card {
+  padding-bottom: 3rem;
+  /* width: 80%;
+  height: 80%; */
+  border-radius: 5px;
+  background-image: linear-gradient(to bottom right, #403f44, #1e1b32);
+  /* background: black; 
+  */
+
+  color: white;
+}
+
+.Confirm_Header {
+  /* width: 100%; */
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.471);
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  justify-content: center;
+}
+
+.ConfirmInv_Info {
+  /* width: 100%;
+  height: 28%; */
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.471);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.ConfirmInv_Inputs {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.471);
+  display: flex;
+  /* flex: 0 1 500%; */
+  flex-wrap: wrap;
+  gap: 10px;
+
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.ConfirmInv_Inputs_Later {
+  height: 44%;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.471);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.Confirm_Input {
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+  height: 53%;
+}
+
+.Confirm_Input p {
+  font-size: 11.5px;
+  color: red;
+}
+.Confirm_Input_Later p {
+  font-size: 11px;
+  color: red;
+}
+
+.Confirm_Input_Later {
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+  height: 33%;
+}
+
+.Confirm_Input input,
+.Confirm_Input select {
+  padding: 0.2rem 0.4rem;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  /* cursor: pointer; */
+  border-radius: 5px;
+  padding-inline: 15px;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.657);
+  font-weight: bold;
+}
+.Confirm_Input input:focus,
+.Confirm_Input select:focus {
+  border: 1px solid red;
+}
+
+.Confirm_Input span {
+  width: 90%;
+  font-size: 14px;
+}
+
+.ConfirmInv_Inputs_Later input,
+.ConfirmInv_Inputs_Later select {
+  border: none;
+  outline: none;
+  /* cursor: pointer; */
+  border-radius: 5px;
+  /* padding-inline: 15px; */
+  font-size: 1rem;
+  padding: 0.2rem 0.4rem;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.657);
+  font-weight: bold;
+}
+.ConfirmInv_Inputs_Later input:focus,
+.ConfirmInv_Inputs_Later select:focus {
+  border: 1px solid red;
+}
+
+.ConfirmInv_Inputs_Later span {
+  width: 90%;
+  font-size: 14px;
+}
+
+.ConfirmInv_ActionBtn {
+  /* width: 100%;
+
+  height: 20%; */
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
+  gap: 10px;
+}
+
+.ConfirmInv_ActionBtn_Later {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
+  gap: 10px;
+}
+
+.ConfirmClose_Btn,
+.ConfirmSubmit_Btn {
+  /* width: 12%; */
+  color: white;
+  border-radius: 15px;
+  /* height: 35%; */
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: purple;
+  font-weight: bold;
+}
+
+.ConfirmClose_Btn_Later,
+.ConfirmSubmit_Btn_Later {
+  width: 12%;
+  color: white;
+  border-radius: 15px;
+  height: 48%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: purple;
+  font-weight: bold;
+}
+
+.ConfirmClose_Btn {
+  background: white;
+  color: red;
+}
+
+.ConfirmClose_Btn_Later {
+  background: white;
+  color: red;
+}
+
+.ConfirmClose_Btn:hover {
+  background: grey;
+  transition: all 350ms;
+  color: white;
+}
+
+.ConfirmSubmit_Btn:hover {
+  background: rgb(242, 17, 242);
+  transition: all 350ms;
+}
+
+.ConfirmClose_Btn_Later:hover {
+  background: grey;
+  transition: all 350ms;
+  color: white;
+}
+
+.ConfirmSubmit_Btn_Later:hover {
+  background: rgb(242, 17, 242);
+  transition: all 350ms;
+}

@@ -1,0 +1,255 @@
+.deposit_Page {
+  margin-top: 2rem;
+  overflow-y: auto;
+  width: 100%;
+  /* max-height: 85vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  border-radius: 3px;
+  background-image: linear-gradient(to bottom right, #403f44, #1e1b32);
+}
+
+.deposit_History {
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  padding-left: 5%;
+  display: flex;
+  align-items: center;
+  top: 5%;
+}
+
+.deposit_History span {
+  padding-block: 20px;
+  padding-inline: 20px;
+  background: grey;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 15px;
+  color: white;
+}
+
+.deposit_History span:hover {
+  transition: all 750ms;
+  border: 1px solid white;
+}
+
+.deposit_Card {
+  width: 60%;
+  margin-top: 6rem;
+  /* height: 60%; */
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.183);
+  background-color: #0d0b32;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.top_DepCard {
+  width: 90%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  font-size: 17px;
+  color: white;
+}
+
+.top_DepCard select {
+  width: 100%;
+  height: 50%;
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 18px;
+  padding-left: 10px;
+  outline: none;
+  color: black;
+  background: gray;
+  font-weight: 500;
+}
+
+.top_DepCard select:focus {
+  border: 1px solid red;
+}
+
+.mid_DepCard {
+  width: 90%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  font-size: 17px;
+}
+
+.mid_DepCard div {
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+
+.mid_DepCard div > input {
+  width: 90%;
+  height: 100%;
+  outline: none;
+  border: 1px solid black;
+  font-size: 18px;
+  border-radius: 5px 0px 0px 5px;
+  padding-left: 10px;
+  padding: 1%;
+}
+.mid_DepCard div > span {
+  width: 13%;
+  height: 100%;
+  background: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.deposit-usd {
+  padding: 4px 27px;
+}
+
+.bot_DepCard {
+  width: 90%;
+  height: 30%;
+}
+
+.bot_DepCard button {
+  width: 100%;
+  /* height: 50%; */
+  border: 1px solid black;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  background: purple;
+  margin-bottom: 0rem;
+  margin: 0.5rem 0;
+}
+.mid_DepCard div > input:focus {
+  border: 1px solid red;
+}
+
+.withdrawal_history {
+  width: 100%;
+  height: 100%;
+
+  align-items: center;
+}
+
+.withdrawal_HistoryHeader {
+  width: 94%;
+  height: 17%;
+  /* background: #000; */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search_HistoryDiv {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.search_HistoryDiv input {
+  border: 1px solid rgba(255, 255, 255, 0.174);
+  padding-left: 10px;
+  font-size: 1rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  outline: none;
+  border-radius: 5px 0px 0px 5px;
+  color: grey;
+  background: transparent;
+}
+
+.search_HistoryDiv input::placeholder {
+  color: gray;
+}
+
+.search_HistoryDiv span {
+  border-radius: 0px 5px 5px 0px;
+  display: flex;
+  font-size: 20px;
+  cursor: pointer;
+  background: #0d0b32;
+  font-weight: bold;
+  color: white;
+
+  padding: 0.6rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.withdrawal_HistoryBody {
+  width: 94%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.top_HistoryBody {
+  width: 100%;
+  padding: 1rem 0.4rem;
+  justify-content: space-between;
+  display: flex;
+  /* padding-inline: 15px; */
+  gap: 0.5rem;
+  align-items: center;
+  font-size: 0.8rem;
+  color: white;
+  font-weight: bold;
+  background: grey;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.bot_HistoryBody {
+  width: 100%;
+  height: 82%;
+  background: #0d0b32;
+  overflow-y: scroll;
+}
+
+.history_Data {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  align-items: center;
+  padding-inline: 15px;
+  cursor: pointer;
+  font-size: 15px;
+  color: grey;
+}
+
+.history_Data:hover {
+  background: #6d6c6c;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .deposit_Card {
+    width: 96%;
+  }
+
+  .mid_DepCard > span {
+    width: 15%;
+    font-size: 2rem;
+  }
+}

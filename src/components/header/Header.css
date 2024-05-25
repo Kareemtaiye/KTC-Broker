@@ -1,0 +1,124 @@
+.home-widget-homeMenu-holder {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 2;
+}
+
+.home-widget {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #07122d;
+}
+
+.home-widget-wrapper {
+  width: 95%;
+  height: 90%;
+}
+
+.home-header-container {
+  width: 100%;
+  height: 10vh;
+  /* background: crimson; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(145, 158, 171, 0.2) 0px 0px 2px 0px,
+    rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+}
+
+.home-header-wrapper {
+  width: 90%;
+  height: 90%;
+  /* background: cornflowerblue; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-header-wrapper-logo {
+  width: 7%;
+  height: 100%;
+  /* background: yellow; */
+}
+
+.home-header-wrapper-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.home-header-wrappper-menu {
+  width: 50%;
+  height: 100%;
+  /* background: red; */
+}
+
+.home-header-wrappper-menu ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+  height: 100%;
+}
+
+.home-header-wrappper-menu ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.menuactive{
+  color: #fff;
+  background-color: #07122d;
+  padding: 0.5rem 1rem;
+}
+
+.menunotactive{
+  color: #c99609;
+  transition: all ease 0.91s;
+}
+
+.menunotactive:hover {
+  color: #fff;
+  background-color: #07122d;
+  padding: 0.5rem 1rem;
+}
+
+.navLinks{
+  transition: all ease 0.91s;
+}
+
+.navLinks:hover {
+  color: #fff;
+  background-color: #07122d;
+  padding: 0.5rem 1rem;
+}
+
+.navLinks:hover a {
+  color: #fff;
+}
+
+.navLinks a {
+  color: #c99609;
+}
+
+.home-header-create-acct-span {
+  padding: 0.5rem;
+  /* background: gray; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+}
+
+.home-header-create-acct-span a {
+  text-decoration: none;
+}
+
+.home-header-wrapper-media {
+  display: none;
+}

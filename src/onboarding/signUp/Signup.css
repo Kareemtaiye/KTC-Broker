@@ -1,0 +1,210 @@
+.SignUp_Page {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SignUp_PageWrapper {
+    width: 50%;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.SignUp_LogoPart {
+    width: 100%;
+    height: 8%;
+    background: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SignUpCard {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SignUpInput_Wrapper {
+    width: 85%;
+    height: 90%;
+    background: lightgray;
+    border-radius: 5px;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.SignUpForm_Header {
+    width: 85%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.SignUpForm_Header p {
+    color: purple;
+    font-weight: bold;
+}
+
+.SignUpForm_Header p:hover {
+    color: rgb(197, 13, 197);
+}
+
+.SignUpForm_Header span {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.SignUp_InputsParts {
+    width: 85%;
+    height: 68%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.SignUp_Inputs_User_Email {
+    width: 100%;
+    height: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.SignUp_Inputs_User_Email p {
+    font-size: 13px;
+    color: purple;
+}
+
+.SignUp_Inputs_User_Email input {
+    width: 100%;
+    height: 45%;
+    border: none;
+    outline: none;
+    background: white;
+    border-radius: 3px;
+    padding-inline: 10px;
+}
+
+.SignUp_Inputs_User_Email article {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+}
+
+.SignUp_Inputs_User_Email article>span {
+    padding-inline: 10px;
+    padding-block: 4px;
+    background: grey;
+    cursor: pointer;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.SignUp_Inputs_User_Email article>span:hover {
+    transition: all 250ms;
+    background: rgb(50, 49, 49);
+    transform: scale(1.03);
+}
+
+.SignUp_Inputs {
+    width: 100%;
+    height: 16%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.SignUp_Inputs span {
+    font-size: 14px;
+}
+
+.SignUp_Inputs input {
+    width: 100%;
+    height: 63%;
+    border: none;
+    outline: none;
+    padding-inline: 10px;
+    background: white;
+    border-radius: 3px;
+}
+
+.SignUp_Inputs select {
+    width: 100%;
+    height: 52%;
+    border: none;
+    outline: none;
+    padding-inline: 10px;
+    background: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.SignUp_Inputs input:placeholder-shown {
+    color: rgba(0, 0, 0, 0);
+    font-size: 13px;
+}
+
+.SignUp_Inputs input:focus {
+    border: 1px solid black;
+}
+
+.SignUp_Buttons {
+    width: 85%;
+    height: 11%;
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.SignUp_Buttons button {
+    width: 100%;
+    height: 80%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+    background: purple;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.SignUp_Buttons button:hover {
+    transition: all 250ms;
+    background: rgb(167, 8, 167);
+}
+
+.Login_Route {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.Country_Code {
+    position: absolute;
+    top: 34%;
+    left: 0.1%;
+    font-size: 14px;
+    color: white;
+    width: 11%;
+    height: 63%;
+    border-radius: 3px 0px 0px 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: grey;
+}

@@ -1,0 +1,255 @@
+.TwoFA_Page {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.TwoFA_Wrapper {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom right, #403f44, #1e1b32);
+  padding: 2% 3%;
+  gap: 1rem;
+  flex-wrap: wrap;
+  overflow-y: auto;
+}
+
+.First_TFA {
+  /* width: 50%; */
+  max-width: 28rem;
+  height: 90%;
+  background: #000;
+  border-radius: 5px;
+  padding-inline: 20px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.Sec_TFA {
+  /* width: 47%; */
+  max-width: 20rem;
+  color: white;
+
+  height: 90%;
+  border-radius: 5px;
+  padding-inline: 20px;
+  /* background: #000; */
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.FirstTFA_Top {
+  width: 100%;
+  height: 18%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  color: white;
+}
+
+.twoFA_QR {
+  width: 100%;
+  height: 39%;
+  display: flex;
+  justify-content: center;
+}
+
+.FirstTFA_Mid {
+  width: 100%;
+  height: 17%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.FirstTFA_Mid .Copy_Btn {
+  width: 13%;
+  height: 48%;
+  background: red;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 5px;
+  right: -2%;
+  cursor: pointer;
+  top: 38%;
+}
+
+.FirstTFA_Mid .Copy_Btn:hover {
+  background: rgb(202, 8, 8);
+  transition: all 350ms;
+}
+
+.FirstTFA_Mid p {
+  width: 100%;
+  font-size: 14px;
+  color: gray;
+}
+
+.FirstTFA_Mid input {
+  width: 100%;
+  padding-left: 10px;
+  height: 48%;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  letter-spacing: 1px;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.693);
+  background: rgba(97, 3, 97, 0.727);
+}
+
+.FirstTFA_Top span {
+  font-weight: bold;
+  font-size: 17px;
+  letter-spacing: 1px;
+
+  color: rgba(255, 255, 255, 0.971);
+}
+
+.FirstTFA_Top p {
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+
+.FirstTFA_Bot {
+  width: 100%;
+  height: 22%;
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+  color: white;
+  font-size: 14px;
+}
+
+.helpBtn {
+  cursor: pointer;
+  color: red;
+}
+
+.helpBtn:hover {
+  background: white;
+}
+
+.Enable_2FA {
+  width: 100%;
+  height: 60%;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  padding-inline: 28px;
+}
+
+.SecTFA_Header {
+  width: 100%;
+  height: 15%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.256);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SecTFA_Header span {
+  font-weight: bold;
+}
+
+.SecTFA_Body {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+}
+
+.TFA_OTP {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.TFA_OTP p {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.TFA_OTP input {
+  width: 100%;
+  height: 53%;
+  border: 1px solid rgba(255, 255, 255, 0.249);
+  outline: none;
+  background-color: transparent;
+  border-radius: 5px;
+  color: white;
+  padding-inline: 10px;
+  font-size: 16px;
+}
+
+.TFA_OTP input:focus {
+  border: 1px solid rgba(255, 255, 255, 0.772);
+}
+
+.Submit_TFA {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  align-items: center;
+}
+
+.Submit_TFA button {
+  width: 100%;
+  height: 55%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  background: purple;
+  color: white;
+  font-weight: bold;
+}
+
+.Submit_TFA button:hover {
+  transition: all 350ms;
+  background-image: linear-gradient(to bottom right, #403f44, #1e1b32);
+}
+
+.loadingData {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0000002f;
+  position: absolute;
+  top: 0;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.loadingData span {
+  color: white;
+  font-size: 30px;
+}

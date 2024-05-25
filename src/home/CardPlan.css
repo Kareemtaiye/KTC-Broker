@@ -1,0 +1,151 @@
+.CardPlan-Container {
+  width: 24%;
+  height: auto;
+  background-color: transparent !important;
+}
+
+.CardPlan-Container-Main {
+  width: 100%;
+  height: auto;
+  /* background-color: #ffffff; */
+  background-color: #07122d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  /* justify-content: center; */
+  padding: 20px 0px 20px 0px;
+  border-radius: 10px;
+  color: white;
+  transition: all 350ms ease-in-out;
+}
+
+.CardPlan-Container-Main:hover {
+  transform: scale(1.1);
+}
+
+.CardPlan-title {
+  width: 90%;
+  height: auto;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  /* padding-top: 10px; */
+  /* justify-content: space-around; */
+}
+
+.CardPlan-title img {
+  /* width: 20%; */
+  height: 50px;
+}
+
+.CardPlan-title h4 {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.CardPlan-Duration {
+  width: 90%;
+  height: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.CardPlan-Duration h3 {
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.CardPlan-Details {
+  width: 90%;
+  height: auto;
+  /* background-color: brown; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* color: black; */
+  gap: 15px;
+}
+
+.CardPlan_num{
+  width: 90%;
+  height: auto;
+  padding: 10px 0px 10px 0px;
+  /* background-color: whitesmoke; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.CardPlan-Details h5 {
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.CardPlan-CTA {
+  width: 90%;
+  height: 45px;
+  /* background-color: green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CardPlan-CTA button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  color: white;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  background: rgb(71, 21, 14);
+  background: linear-gradient(
+    276deg,
+    rgba(71, 21, 14, 1) 0%,
+    rgba(3, 3, 3, 1) 84%
+  );
+  border-radius: 6px;
+}
+
+
+
+
+
+@media screen and (max-width: 800px) {
+
+  .CardPlan-Container-Main:hover {
+    transform: none;
+  }
+  .CardPlan-Container {
+    width: 100%;
+    height: auto;
+    /* background-color: red !important; */
+  }
+  .CardPlan-title {
+    /* background-color: aqua; */
+    gap: 20px;
+  }
+  .CardPlan-title img {
+    /* width: 20%; */
+    height: 50px !important;
+  }
+  
+  
+
+}
+
+
+
+
+@media screen and (max-width: 330px) {
+
+  .CardPlan-Container {
+    /* background-color: red !important; */
+    margin-bottom: 90px !important;
+  }
+
+}
