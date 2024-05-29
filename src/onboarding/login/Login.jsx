@@ -10,6 +10,7 @@ import { toast } from "react-toastify";
 // import citadelLogo from "../../assets/image/citadelLogo.png";
 import citadelLogo from "../../assets/citadel2.png";
 import bulb from "../../assets/bulb with image on.png";
+import ktcLogo from '/ktcLogo2.jpg'
 import { useDispatch, useSelector } from "react-redux";
 import {
   userResData,
@@ -126,7 +127,7 @@ const Login = () => {
         <div className="loginLogo">
           <img
             style={{ width: "100%", height: "70%" }}
-            // src={Logo}
+            src={ktcLogo}
             alt="Logo"
           />
         </div>
@@ -139,23 +140,26 @@ const Login = () => {
             <input
               type="email"
               className="loginEmailInput"
-              value={''}
+              // value={''}
             />
           </div>
           <div className="loginPasswordDiv">
             <label className="login-label">Password</label>
             <div className="login-password-div">
               <input
-                type={'' ? "text" : "password"}
+                type={ showPassword ? 'text' : "password"}
                 className="loginPasswordInput"
-                value={''}
+                // value={''}
               />
               <button
                 disabled={loading}
                 className="login-show-btn"
                 onClick={() => {
+                  setShowPassword(!showPassword)
                 }}>
-                Show
+                {
+                  showPassword ? 'Hide' : 'Show'
+                }
               </button>
             </div>
           </div>
