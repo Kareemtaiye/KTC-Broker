@@ -9,7 +9,7 @@ import { toast } from "react-toastify";
 // import citadelLogo from "/CITADEL GOLD LOGOmain.png";
 // import citadelLogo from "../../assets/image/citadelLogo.png";
 import citadelLogo from "../../assets/citadel2.png";
-// import bulb from "../../assets/bulb with image on.png";
+import bulb from "../../assets/bulb with image on.png";
 import { useDispatch, useSelector } from "react-redux";
 import {
   userResData,
@@ -50,7 +50,7 @@ const Login = () => {
         formData.append("password", password);
 
         const response = await axios.post(
-          "https://citadel-inv.onrender.com/login",
+          // "https://citadel-inv.onrender.com/login",
           { emailOrUserName: emailOrUser, password: password }
         );
         console.log(response);
@@ -121,131 +121,192 @@ const Login = () => {
   }, [expToken]);
 
   return (
-    <div className="Login_Page">
-      <div className="animation-div">
-        {/* <img
-          src={bulb}
-          alt="animation-img citadel"
-          className="animation-image"
-        /> */}
-      </div>
-      <div className="Login_PageWrapper">
-        <div className="LoginCard">
-          <form onSubmit={loginUser} className="LoginInput_Wrapper">
-            <div className="Login_LogoPart">
-              <Link to={"/"}>
-                <img
-                  src={citadelLogo}
-                  height={120}
-                  alt="citadelLogo"
-                  className="Login_LogoPart_Img"
-                />
-              </Link>
-            </div>
-            <div className="LoginForm_Header">
-              <span>Log in to Account</span>
-            </div>
-            {/* <div> */}
-            <div className="Login_InputsParts">
-              <div className="Login_Inputs_User_Email">
-                <article>
-                  <span
-                    style={{
-                      background: "#c48742",
-                    }}
-                  >
-                    Username or Email
-                  </span>
-                </article>
-                <input
-                  onChange={(e) => setemailOrUser(e.target.value)}
-                  type="text"
-                  placeholder="Username or Email"
-                  className="login-input-for-input"
-                />
-                <i></i>
-              </div>
-              <div className="Login_Inputs">
-                <span
-                  className={isFocused ? "login-span-focused" : "login-span"}
-                >
-                  Password
-                </span>
-                <input
-                  type={showPassword ? "text" : "password"}
-                  // value={password}
-                  onChange={(e) => setpassword(e.target.value)}
-                  onFocus={() => setIsFocused(true)}
-                  className="login-input-for-input"
-                />
-                <img
-                  src={visibilityIcon}
-                  alt="showPassword"
-                  className="showPassword"
-                  onClick={() => setShowPassword((prevState) => !prevState)}
-                />
-              </div>
-            </div>
-            <div className="Login_Buttons">
-              <button
-                style={{ color: "white" }}
-                type="submit"
-                onClick={() => {
-                  setTimeout(() => {
-                    setNextPhase(true);
-                  }, 2000);
-                  setLoading(true);
-                }}
-              >
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>{" "}
-                {loading ? (
-                  <ClipLoader
-                    id="clipLoader"
-                    display="block"
-                    position="absolute"
-                    top="4px"
-                    left="4px"
-                    color="#c48742"
-                  />
-                ) : (
-                  "Submit"
-                )}
-              </button>
-              <div className="Login_Route">
-                <span className="span-color">Already have an account? </span>
-                <span
-                  onClick={() => nav("/register")}
-                  style={{
-                    color: "purple",
-                    textDecoration: "underline",
-                    cursor: "pointer",
-                  }}
-                >
-                  Sign up
-                </span>
-              </div>
-              <span
-                onClick={() => nav("/forget_password")}
-                className="Forgot_Span span-color"
-                style={{
-                  color: "purple",
-                  // textDecoration: "underline",
-                  cursor: "pointer",
-                  fontSize: "13px",
-                  fontWeight: "bold",
-                }}
-              >
-                Forgot Password?
-              </span>
-            </div>
-            {/* </div> */}
-          </form>
+    <div className="loginBody">
+      <div className="loginContainer">
+        <div className="loginLogo">
+          <img
+            style={{ width: "100%", height: "70%" }}
+            // src={Logo}
+            alt="Logo"
+          />
         </div>
+        {/* <div className="loginLogo">
+            <img src={ultimate_logo} alt="" />
+          </div> */}
+        <form action="" className="loginForm" onSubmit={loginUser}>
+          <div className="loginEmailDiv">
+            <label className="login-label">Email</label>
+            <input
+              type="email"
+              className="loginEmailInput"
+              value={''}
+            />
+          </div>
+          <div className="loginPasswordDiv">
+            <label className="login-label">Password</label>
+            <div className="login-password-div">
+              <input
+                type={'' ? "text" : "password"}
+                className="loginPasswordInput"
+                value={''}
+              />
+              <button
+                disabled={loading}
+                className="login-show-btn"
+                onClick={() => {
+                }}>
+                Show
+              </button>
+            </div>
+          </div>
+          <span
+            className="Forget_Password"
+            onClick={() => {
+              nav('/forget_password')
+            }}
+          >
+            Forgot Password?
+          </span>
+          <button
+            style={{ background: loading ? "grey" : null }}
+            className="loginBtn"
+            type="submit">
+            {loading ? <ClipLoader size={20} color="white" /> : "Login"}
+          </button>
+          <p className="dnt-ve-acct-p">
+            Don't have an account?{" "}
+            <span
+              className="loginSpan"
+              onClick={() => {
+                nav("/signIn");
+              }}>
+              Create an account
+            </span>
+          </p>
+        </form>
       </div>
     </div>
+    // <div className="Login_Page">
+    //   {/* <div className="animation-div">
+    //     <img
+    //       src={bulb}
+    //       alt="animation-img citadel"
+    //       className="animation-image"
+    //     />
+    //   </div> */}
+    //   <div className="Login_PageWrapper">
+    //     <div className="LoginCard">
+    //       <form onSubmit={loginUser} className="LoginInput_Wrapper">
+    //         <div className="Login_LogoPart">
+    //           <Link to={"/"}>
+    //             <img
+    //               src={citadelLogo}
+    //               height={120}
+    //               alt="citadelLogo"
+    //               className="Login_LogoPart_Img"
+    //             />
+    //           </Link>
+    //         </div>
+    //         <div className="LoginForm_Header">
+    //           <span>Log in to Account</span>
+    //         </div>
+    //         <div className="Login_InputsParts">
+    //           <div className="Login_Inputs_User_Email">
+    //             {/* <article>
+    //               <span
+    //                 style={{
+    //                   background: "#c48742",
+    //                 }}
+    //               >
+    //                 Username or Email
+    //               </span>
+    //             </article> */}
+    //             <input
+    //               onChange={(e) => setemailOrUser(e.target.value)}
+    //               type="text"
+    //               placeholder="Username or Email"
+    //               className="login-input-for-input"
+    //             />
+    //             <i></i>
+    //           </div>
+    //           <div className="Login_Inputs">
+    //             <span
+    //               className={isFocused ? "login-span-focused" : "login-span"}
+    //             >
+    //               Password
+    //             </span>
+    //             <input
+    //               type={showPassword ? "text" : "password"}
+    //               onChange={(e) => setpassword(e.target.value)}
+    //               onFocus={() => setIsFocused(true)}
+    //               className="login-input-for-input"
+    //             />
+    //             <img
+    //               src={visibilityIcon}
+    //               alt="showPassword"
+    //               className="showPassword"
+    //               onClick={() => setShowPassword((prevState) => !prevState)}
+    //             />
+    //           </div>
+    //         </div>
+    //         <div className="Login_Buttons">
+    //           <button
+    //             style={{ color: "white" }}
+    //             type="submit"
+    //             onClick={() => {
+    //               setTimeout(() => {
+    //                 setNextPhase(true);
+    //               }, 2000);
+    //               setLoading(true);
+    //             }}
+    //           >
+    //             <span></span>
+    //             <span></span>
+    //             <span></span>
+    //             <span></span>{" "}
+    //             {loading ? (
+    //               <ClipLoader
+    //                 id="clipLoader"
+    //                 display="block"
+    //                 position="absolute"
+    //                 top="4px"
+    //                 left="4px"
+    //                 color="#c48742"
+    //               />
+    //             ) : (
+    //               "Submit"
+    //             )}
+    //           </button>
+    //           <div className="Login_Route">
+    //             <span className="span-color">Already have an account? </span>
+    //             <span
+    //               onClick={() => nav("/register")}
+    //               style={{
+    //                 color: "purple",
+    //                 textDecoration: "underline",
+    //                 cursor: "pointer",
+    //               }}
+    //             >
+    //               Sign up
+    //             </span>
+    //           </div>
+    //           <span
+    //             onClick={() => nav("/forget_password")}
+    //             className="Forgot_Span span-color"
+    //             style={{
+    //               color: "purple",
+    //               cursor: "pointer",
+    //               fontSize: "13px",
+    //               fontWeight: "bold",
+    //             }}
+    //           >
+    //             Forgot Password?
+    //           </span>
+    //         </div>
+    //       </form>
+    //     </div>
+    //   </div>
+    // </div>
   );
 
   // return (

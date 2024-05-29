@@ -1,12 +1,190 @@
+.loginBody {
+  width: 100%;
+  height: 100vh;
+  background: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginContainer {
+  width: 23%;
+  height: 50%;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.loginLogo {
+  width: 65%;
+  height: 20%;
+  /* /* background: purple; */
+  display: flex;
+  align-items: center;
+}
+
+.loginLogo img {
+  width: 100%;
+  height: 85%;
+}
+
+.loginForm {
+  width: 90%;
+  min-height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.loginEmailDiv,
+.loginPasswordDiv {
+  width: 95%;
+  height: 30%;
+}
+
+.login-label {
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 5px;
+  line-height: 21px;
+  color: #2a3547;
+}
+
+.loginEmailInput {
+  width: 100%;
+  height: 50%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgb(221, 215, 215);
+  padding: 10px;
+}
+
+.loginEmailInput:focus,
+.loginPasswordInput:focus {
+  border-color: rgb(226,5,5);
+}
+
+.login-password-div {
+  width: 100%;
+  height: 50%;
+}
+
+.Forget_Password {
+  font-size: 13px;
+  color: #2a3547;
+  cursor: pointer;
+}
+
+.Forget_Password:hover {
+  transition: all 450ms;
+  font-weight: bold;
+  color: rgb(226,5,5);
+}
+
+.loginPasswordInput {
+  width: 85%;
+  height: 100%;
+  outline: none;
+  border-radius: 5px 0px 0px 5px;
+  border: 1px solid rgb(221, 215, 215);
+  padding: 10px;
+}
+
+.login-show-btn {
+  width: 15%;
+  height: 100%;
+  cursor: pointer;
+  border-radius: 0px 5px 5px 0px;
+  border: 1px solid rgb(221, 215, 215);
+  border-left: 0;
+  background: none;
+  outline: none;
+  color: #2a3547;
+}
+
+.loginBtn {
+  width: 95%;
+  height: 15%;
+  background: rgb(226,5,5);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dnt-ve-acct-p {
+  font-size: 13px;
+  color: #2a3547;
+}
+
+.loginSpan {
+  color: rgb(226,5,5);
+  cursor: pointer;
+}
+
+@media (max-width: 580px) {
+  .loginContainer {
+    width: 90%;
+    height: 50%;
+    background: white;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .Login_Page {
   width: 100%;
-  height: max-content;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   /* background: linear-gradient(#0d0b32); */
   background-color: #0d0b32;
-  position: relative;
+  /* position: relative; */
 
   /* background-image: url("src/investmentpic.jpg") cover no-repeat; */
   /* background: center / cover no-repeat url("../../src/investmentpic.jpg"); */
@@ -54,8 +232,8 @@
 }
 
 .Login_PageWrapper {
-  width: 50%;
-  height: 100vh;
+  width: 40%;
+  height: 75vh;
   /* background: #000; */
   /* background: linear-gradient(#141e30, #243b55); */
   display: flex;
@@ -82,7 +260,7 @@
 
 .LoginCard {
   width: 100%;
-  height: 90%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,10 +268,10 @@
 }
 
 .LoginInput_Wrapper {
-  width: 85%;
-  /* height: 90%; */
-  min-height: 30rem;
-  padding-bottom: 30px;
+  width: 100%;
+  height: 100%;
+  /* min-height: 30rem;
+  padding-bottom: 30px; */
   /* background: lightgray; */
   opacity: 0.8;
   border-radius: 5px;
@@ -136,8 +314,8 @@
 
 .Login_InputsParts {
   width: 85%;
-  height: 100%;
-  /* background: blue; */
+  height: 65%;
+  background: green;
   display: flex;
   gap: 15px;
   flex-direction: column;
@@ -278,6 +456,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  background: blue;
 }
 
 .Login_Buttons button {
