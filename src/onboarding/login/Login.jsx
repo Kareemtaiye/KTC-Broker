@@ -10,7 +10,7 @@ import { toast } from "react-toastify";
 // import citadelLogo from "../../assets/image/citadelLogo.png";
 import citadelLogo from "../../assets/citadel2.png";
 import bulb from "../../assets/bulb with image on.png";
-import ktcLogo from '/ktcLogo2.jpg'
+import ktcLogo from '/ktcLogo.jpg'
 import { useDispatch, useSelector } from "react-redux";
 import {
   userResData,

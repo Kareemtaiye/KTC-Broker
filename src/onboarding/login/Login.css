@@ -1,7 +1,7 @@
 .loginBody {
   width: 100%;
   height: 100vh;
-  background: #161616;
+  background: #dad9d9;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,7 +10,7 @@
 .loginContainer {
   width: 29%;
   height: 65%;
-  background: white;
+  background: black;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -51,7 +51,7 @@
   font-weight: 400;
   padding-bottom: 5px;
   line-height: 21px;
-  color: #2a3547;
+  color: #c79423;
 }
 
 .loginEmailInput {
@@ -59,7 +59,7 @@
   height: 50%;
   outline: none;
   border-radius: 5px;
-  border: 1px solid rgb(221, 215, 215);
+  border: 1px solid #c79423;
   padding: 10px;
 }
 
@@ -75,7 +75,7 @@
 
 .Forget_Password {
   font-size: 13px;
-  color: #2a3547;
+  color: #f8fbff;
   cursor: pointer;
 }
 
@@ -90,7 +90,7 @@
   height: 100%;
   outline: none;
   border-radius: 5px 0px 0px 5px;
-  border: 1px solid rgb(221, 215, 215);
+  border: 1px solid #c79423;
   padding: 10px;
 }
 
@@ -99,11 +99,12 @@
   height: 100%;
   cursor: pointer;
   border-radius: 0px 5px 5px 0px;
-  border: 1px solid rgb(221, 215, 215);
+  border: 1px solid #c79423;
   border-left: 0;
-  background: none;
+  background: white;
   outline: none;
   color: #2a3547;
+  font-weight: 600;
 }
 
 .loginBtn {
@@ -118,7 +119,7 @@
 
 .dnt-ve-acct-p {
   font-size: 13px;
-  color: #2a3547;
+  color: #edf1f9;
 }
 
 .loginSpan {
