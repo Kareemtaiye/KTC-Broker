@@ -11,7 +11,7 @@ const Hero = () => {
     {
       id: 1,
       //   image: First,
-      HeadText: "CITADEL INVESTMENT",
+      HeadText: "APEX FUND",
       HeadText2: "EFFICIENT AND RELIABLE",
       SubHeaderText:
         "24/7 live support, our support channels are available anytime everyday",
@@ -19,10 +19,10 @@ const Hero = () => {
     {
       id: 2,
       //   image: Second,
-      HeadText: "CITADEL INVESTMENT CORE",
+      HeadText: "APEX FUND",
       HeadText2: "EASY WAY TO TRADE",
       SubHeaderText:
-        "Trade in the most popular currencies of your choice; USD,GBD, AUD, BTC, CNY, EUR, CAD",
+        "Trade in the most popular currencies of your choice; USD, GBD, AUD, BTC, CNY, EUR, CAD",
     },
     {
       id: 3,
@@ -61,7 +61,6 @@ const Hero = () => {
   return (
     <div className="hero_section">
       <div className="the_hero">
-        {/* <img src={Context[currentSlide].image} alt={Context[currentSlide].HeadText} className='w-full h-full object-cover' /> */}
         <div className="hero_writeup">
           <div className="hero_writeup_text">
             <motion.div
@@ -81,7 +80,6 @@ const Hero = () => {
                 opacity: 1,
                 y: 0,
               }}
-              // viewport={{ margin: "-40px" }}
             >
               <motion.img
                 src={earth}

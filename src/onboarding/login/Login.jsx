@@ -182,7 +182,7 @@ const Login = () => {
             <span
               className="loginSpan"
               onClick={() => {
-                nav("/signIn");
+                nav("/register");
               }}>
               Create an account
             </span>
