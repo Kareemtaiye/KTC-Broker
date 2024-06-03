@@ -4,7 +4,8 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
 import "./Header.css";
 import "./HeaderMedia.css";
-import CITADEL from "../../assets/citadel1.png";
+import CITADEL from "/ktcLogo.jpg";
+import { TickerTape } from "react-ts-tradingview-widgets";
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
@@ -28,7 +29,7 @@ const Header = () => {
         <div className="home-widget">
           <div className="home-widget-wrapper">
             {/* <TradingViewWidget /> */}
-            <script
+            {/* <script
               defer
               src="https://www.livecoinwatch.com/static/lcw-widget.js"></script>{" "}
             <div
@@ -37,7 +38,8 @@ const Header = () => {
               lcw-color-tx="#999999"
               lcw-marquee-1="coins"
               lcw-marquee-2="movers"
-              lcw-marquee-items="10"></div>
+              lcw-marquee-items="10"></div> */}
+              <TickerTape colorTheme="dark" isTransparent='true'/>
           </div>
         </div>
         <div className="home-header-container">

@@ -1,7 +1,7 @@
 .home-widget-homeMenu-holder {
   position: sticky;
   top: 0;
-  background: white;
+  /* background: white; */
   z-index: 2;
 }
 
@@ -22,7 +22,7 @@
 .home-header-container {
   width: 100%;
   height: 10vh;
-  /* background: crimson; */
+  background: #080808;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,17 +37,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #c79423;
 }
 
 .home-header-wrapper-logo {
-  width: 7%;
+  width: 15%;
   height: 100%;
   /* background: yellow; */
+  display: flex;
+  align-items: center;
 }
 
 .home-header-wrapper-logo img {
   width: 100%;
-  height: 100%;
+  height: 70%;
 }
 
 .home-header-wrappper-menu {
