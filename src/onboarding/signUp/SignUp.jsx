@@ -146,7 +146,7 @@ const SignUp = () => {
         formData.append("city", city.trim());
         formData.append("profilePicture", "");
         const response = await axios.post(
-          "https://citadel-inv.onrender.com/registration",
+          // "https://citadel-inv.onrender.com/registration",
           formData
         );
         console.log(response);

@@ -125,11 +125,13 @@ const Login = () => {
     <div className="loginBody">
       <div className="loginContainer">
         <div className="loginLogo">
+          <Link to={'/'}>
           <img
             style={{ width: "100%", height: "70%" }}
             src={ktcLogo}
             alt="Logo"
           />
+          </Link>
         </div>
         {/* <div className="loginLogo">
             <img src={ultimate_logo} alt="" />
@@ -141,6 +143,7 @@ const Login = () => {
               type="email"
               className="loginEmailInput"
               // value={''}
+              onChange={(e) => setemailOrUser(e.target.value)}
             />
           </div>
           <div className="loginPasswordDiv">
@@ -150,6 +153,7 @@ const Login = () => {
                 type={ showPassword ? 'text' : "password"}
                 className="loginPasswordInput"
                 // value={''}
+                onChange={(e) => setpassword(e.target.value)}
               />
               <button
                 disabled={loading}
