@@ -24,12 +24,12 @@ const Dashboard = () => {
   const [totalDeposit, setTotalDeposit] = useState(0);
   const [totalWithdrawal, setTotalWithdrawal] = useState(0);
   const [lastestTransaction, setlastestTransaction] = useState({});
-  const { id } = useSelector((state) => state.BTC.user);
+  // const { id } = useSelector((state) => state.BTC.user);
 
   async function getTotalDeposit() {
     try {
       const response = await axios.get(
-        `https://citadel-inv.onrender.com/getTotalDeposit/${id}`
+        // `https://citadel-inv.onrender.com/getTotalDeposit/${id}`
       );
       console.log(response);
       setTotalDeposit(response?.data?.totalDeposit);
@@ -49,7 +49,7 @@ const Dashboard = () => {
   async function getTotalWithdrawal() {
     try {
       const response = await axios.get(
-        `https://citadel-inv.onrender.com/getTotalWithdraw/${id}`
+        // `https://citadel-inv.onrender.com/getTotalWithdraw/${id}`
       );
       console.log(response);
       setTotalWithdrawal(response?.data?.totalWithdraw);
@@ -69,7 +69,7 @@ const Dashboard = () => {
   async function getLatestTransaction() {
     try {
       const response = await axios.get(
-        `https://citadel-inv.onrender.com/getLatestTransaction/${id}`
+        // `https://citadel-inv.onrender.com/getLatestTransaction/${id}`
       );
       console.log(response);
       setlastestTransaction(response.data?.data);

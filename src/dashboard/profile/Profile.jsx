@@ -38,7 +38,7 @@ import { useSelector } from "react-redux";
 // }
 
 function Profile({ user }) {
-  const { name, email } = useSelector((state) => state.BTC.user);
+  // const { name, email } = useSelector((state) => state.BTC.user);
   const { firstName, lastName } = useSelector((state) => state.BTC.userRes);
   const navigate = useNavigate();
   const [dropDown, setDropDown] = useState(false);

@@ -28,7 +28,7 @@ import { toast } from "react-toastify";
 import axios from "axios";
 import DeleteUser from "../DeleteUser/DeleteUser";
 // import citadelLogo from "../../assets/image/citadelLogo.png";
-import citadelLogo from "../../assets/citadel2.png";
+// import citadelLogo from "../../assets/citadel2.png";
 // import CITADEL from "/CITADEL.png";
 import {
   expireSession,
@@ -52,6 +52,15 @@ import PendingKyc from "../PendingKyc/PendingKyc";
 import PendingTickets from "../PendingTickets/PendingTickets";
 import UserDetails from "../UserDetails/UserDetails";
 import { FaUser } from "react-icons/fa";
+import ktcLogo from '/ktcLogo.jpg'
+
+
+
+
+
+
+
+
 
 const UserMenu = () => {
   const AdminUser = useSelector((state) => state.BTC.userRes);
@@ -82,7 +91,7 @@ const UserMenu = () => {
   const [pendingKyc, setPendingKyc] = useState(false);
   const [userDetails, setUserDetails] = useState(false);
   const [loading, setLoading] = useState(false);
-  const { token, id } = useSelector((state) => state.BTC.user);
+  // const { token, id } = useSelector((state) => state.BTC.user);
 
   console.log(accountBalance);
 
@@ -95,7 +104,7 @@ const UserMenu = () => {
   async function getAccountBalanceDetails() {
     try {
       const response = await axios.get(
-        `https://citadel-inv.onrender.com/getUserTotalBalance/${id}`
+        // `https://citadel-inv.onrender.com/getUserTotalBalance/${id}`
       );
       console.log(response);
       dispatch(getAccountBalance(response.data.accountBalance));
@@ -109,7 +118,7 @@ const UserMenu = () => {
   async function getDepositWallet() {
     try {
       const response = await axios.get(
-        `https://citadel-inv.onrender.com/getUserDepositWallet/${id}`
+        // `https://citadel-inv.onrender.com/getUserDepositWallet/${id}`
       );
 
       console.log(response);
@@ -132,7 +141,7 @@ const UserMenu = () => {
   async function getReferalWallet() {
     try {
       const response = await axios.get(
-        `https://citadel-inv.onrender.com/getUserReferalWallet/${id}`
+        // `https://citadel-inv.onrender.com/getUserReferalWallet/${id}`
       );
       console.log(response);
       setInitReferalApi(response?.data?.referalWallet);
@@ -154,7 +163,7 @@ const UserMenu = () => {
   async function getIntersetWallet() {
     try {
       const response = await axios.get(
-        `https://citadel-inv.onrender.com/getUserIntrestWallet/${id}`
+        // `https://citadel-inv.onrender.com/getUserIntrestWallet/${id}`
       );
       console.log(response);
       setnitInterestApi(response.data?.intrestWallet);
@@ -547,7 +556,7 @@ const UserMenu = () => {
       <div className="user-dashboard-left-container">
         <div className="user-dashboard-left-body">
           <div className="user-dashboard-left-body-logo">
-            <img src={citadelLogo} alt="citadelLogo" />
+            <img src={ktcLogo} alt="citadelLogo" />
           </div>
           <div className="user-dashboard-acct-balance-container">
             <h1
@@ -587,7 +596,7 @@ const UserMenu = () => {
                 </div>
               </div>
             </div>
-            <div className="user-dashboard-deposit-wallet-container">
+            {/* <div className="user-dashboard-deposit-wallet-container">
               <div className="user-dashboard-deposit-wallet-wrapper">
                 <p>Referral Wallet</p>
                 <div className="user-dashboard-deposit-wallet-amount">
@@ -596,8 +605,8 @@ const UserMenu = () => {
                   </h3>
                 </div>
               </div>
-            </div>
-            <div className="user-dashboard-deposit-withdraw-btn-wrapper">
+            </div> */}
+            {/* <div className="user-dashboard-deposit-withdraw-btn-wrapper">
               <button
                 onClick={() => {
                   navigate("/deposit");
@@ -612,7 +621,7 @@ const UserMenu = () => {
               >
                 Withdraw
               </button>
-            </div>
+            </div> */}
           </div>
           <div className="user-dashboard-left-body-menu">
             <NavLink to='/dashboard' className={({ isActive }) => isActive ? 'user-dashboard-left-menu-dashboard-active' : 'user-dashboard-left-menu-dashboard'}>
@@ -687,7 +696,7 @@ const UserMenu = () => {
                   </div>
                   <div className="user-dashboard-menu-referral-container-title">
                     <p>
-                      referrals
+                      Referrals
                     </p>
                   </div>
                 </div>
@@ -821,7 +830,7 @@ const UserMenu = () => {
         >
           <div className="user-left-menu-logo-wrapper-media">
             <div className="user-left-menu-logo-container-media">
-              <img src={citadelLogo} alt="citadelLogo" />
+              <img src={ktcLogo} alt="citadelLogo" />
             </div>
             <IoMdClose
               style={{
